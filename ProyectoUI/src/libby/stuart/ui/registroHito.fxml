@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #D9D9D9;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libby.stuart.tl.RHitoController">
+   <right>
+      <AnchorPane minWidth="-Infinity" prefHeight="768.0" prefWidth="683.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="768.0" fitWidth="683.0" layoutX="-14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/BannerOlimpico.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="768.0" prefWidth="683.0" style="-fx-background-color: #0D0D0D;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#d9d9d9" layoutX="216.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Poppins;" text="Registrar Hito" textAlignment="CENTER" wrappingWidth="234.203125">
+               <font>
+                  <Font name="Bell MT" size="37.0" />
+               </font>
+            </Text>
+            <Label layoutX="98.0" layoutY="284.0" text="Ingrese el nombre del hito" textFill="#d9d9d9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textoNombre" layoutX="333.0" layoutY="279.0" prefHeight="31.0" prefWidth="253.0" style="-fx-background-color: none; -fx-border-color: #A6036D; -fx-border-width: 3; -fx-border-radius: 45; -fx-text-fill: #d9d9d9;" />
+            <Label layoutX="98.0" layoutY="328.0" text="Ingrese una descripcion del hito" textFill="#d9d9d9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textoDescripcion" layoutX="333.0" layoutY="323.0" prefHeight="31.0" prefWidth="253.0" style="-fx-background-color: none; -fx-border-color: #A6036D; -fx-border-width: 3; -fx-border-radius: 45; -fx-text-fill: #d9d9d9;" />
+            <Label layoutX="98.0" layoutY="373.0" text="Ingrese el kilómetro del hito" textFill="#d9d9d9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textoKilo" layoutX="333.0" layoutY="368.0" prefHeight="31.0" prefWidth="253.0" style="-fx-background-color: none; -fx-border-color: #A6036D; -fx-border-width: 3; -fx-border-radius: 45; -fx-text-fill: #d9d9d9;" />
+            <Label layoutX="98.0" layoutY="417.0" text="Ingrese el codigo del reto" textFill="#d9d9d9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textoCodigo" layoutX="333.0" layoutY="412.0" prefHeight="31.0" prefWidth="253.0" style="-fx-background-color: none; -fx-border-color: #A6036D; -fx-border-width: 3; -fx-border-radius: 45; -fx-text-fill: #d9d9d9;" />
+            <Button fx:id="botonRegistro" layoutX="469.0" layoutY="551.0" mnemonicParsing="false" onAction="#botonRegistroAccion" prefHeight="37.0" prefWidth="117.0" style="-fx-background-color: #A6036D; -fx-background-radius: 45;" text="Registrar" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="botonVolver" layoutX="98.0" layoutY="551.0" mnemonicParsing="false" onAction="#botonVolverAccion" prefHeight="37.0" prefWidth="117.0" style="-fx-background-color: none; -fx-border-radius: 45; -fx-border-color: #A6036D; -fx-border-width: 3;" text="Volver" textFill="#a6036d">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="registroMensaje" layoutX="206.0" layoutY="228.0" prefHeight="28.0" prefWidth="272.0" style="-fx-font-family: Poppins;" textAlignment="CENTER" textFill="#308c36">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

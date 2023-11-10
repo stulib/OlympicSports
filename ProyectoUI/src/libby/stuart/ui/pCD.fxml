@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #0D0D0D;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libby.stuart.tl.PCDController">
+   <top>
+      <AnchorPane prefHeight="1.0" prefWidth="1366.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="221.0" layoutY="46.0" text="Provincias, Cantones y Distritos " textFill="#d9d9d9">
+               <font>
+                  <Font size="54.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <TableView fx:id="tablaCanton" editable="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="384.0" prefWidth="340.0" BorderPane.alignment="CENTER">
+         <columns>
+            <TableColumn fx:id="cNombre" maxWidth="4796.0" prefWidth="119.0" text="Canton" />
+            <TableColumn fx:id="cID" minWidth="0.0" prefWidth="107.0" text="ID" />
+            <TableColumn fx:id="cProvincia" prefWidth="112.0" text="Codigo provincia" />
+         </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="botonVolver" layoutX="221.0" layoutY="72.0" mnemonicParsing="false" onAction="#botonVolverAccion" style="-fx-background-color: none;" text="Volver" textFill="#d9d9d9">
+               <font>
+                  <Font name="System Bold Italic" size="27.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <left>
+      <AnchorPane prefHeight="442.0" prefWidth="459.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tablaProvincias" layoutX="150.0" layoutY="29.0" prefHeight="384.0" prefWidth="340.0">
+              <columns>
+                <TableColumn fx:id="pNombre" prefWidth="118.0" text="Provincia" />
+                <TableColumn fx:id="pID" prefWidth="110.0" text="id" />
+                  <TableColumn fx:id="pPais" prefWidth="111.0" text="Codigo país" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="442.0" prefWidth="460.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tablaDistrito" layoutX="6.0" layoutY="29.0" prefHeight="384.0" prefWidth="340.0">
+              <columns>
+                <TableColumn fx:id="dNombre" prefWidth="107.0" text="Distrito" />
+                <TableColumn fx:id="dID" prefWidth="124.0" text="ID" />
+                  <TableColumn fx:id="dCanton" prefWidth="107.0" text="Codigo cantón" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
