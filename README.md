@@ -17,3 +17,5 @@ This Web app applicattion was developed by Stuart Libby.
 ![alt text](https://github.com/stulib/OlympicSports/blob/main/ss1.jpg?raw=true)
 ![alt text](https://github.com/stulib/OlympicSports/blob/main/ss3.jpg?raw=true)
 ![alt text](https://github.com/stulib/OlympicSports/blob/main/ss2.jpg?raw=true)
+![alt text](https://github.com/stulib/OlympicSports/blob/main/ss4.jpg?raw=true)
+![alt text](https://github.com/stulib/OlympicSports/blob/main/ss6.jpg?raw=true)
